@@ -1,34 +1,102 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
 
-## Getting Started
+<img src="https://raw.githubusercontent.com/brunnosena/ignews/main/public/images/avatar.svg" alt="ignews" width="100px"/>
 
-First, run the development server:
+</h1>
+
+<p align="center">
+  IGNEWS - Portal de notícias 📰🚀
+  <br>
+  <br>
+
+  <img alt="Language count" src="https://img.shields.io/github/repo-size/brunnosena/ignews"/>
+
+  <a href="https://rocketseat.com.br">
+    <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-%237519C1">
+  </a>
+
+  <a href="https://www.linkedin.com/in/brunnosena/">
+    <img alt="Made by Brunno Sena" src="https://img.shields.io/badge/made%20by-brunnosena-%237519C1">
+  </a>
+
+  <a href="https://github.com/brunnosena/ignews/commits/main">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/brunnosena/ignews">
+  </a>
+
+  <img alt="License" src="https://img.shields.io/github/license/brunnosena/ignews">
+</p>
+
+---
+
+<p align="center">
+  <a href="#dart-sobre">Sobre</a> &#xa0; | &#xa0; 
+  <a href="#rocket-tecnologias">Tecnologias</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-requerimentos">Requerimentos</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-começando">Começando</a> &#xa0; &#xa0; | &#xa0;
+  <a href="#author">Autor</a> &#xa0; &#xa0;
+</p>
+
+<br>
+
+## :dart: Sobre ##
+
+Aplicação desenvolvida utilizando o framework NextJS aplicando conceitos como consumo de API externas, API Root, Server Side Rendering (SSR), Static Site Generation (SSG), STRIPE para pagamentos das subscriptions, NextAuth para autenticação com Github, FaunaDB para armazenar as informações do usuário em um banco de dados e Prismic CMS para adição e gerenciamento do conteúdo dos posts.
+
+<br/>
+
+O projeto foi desenvolvido como pratica das aulas do modulo 03 do [Ignite da Rocketseat](https://rocketseat.com.br/)
+
+
+## :rocket: Tecnologias ##
+
+- [ReactJS](https://reactjs.org/)
+- [NextJS](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [SASS](https://sass-lang.com/)
+- [Next-Auth](https://next-auth.js.org/)
+- [Stripe](https://stripe.com/)
+- [FaunaDB](https://fauna.com/)
+- [Prismic CMS](https://prismic.io/)
+
+
+## :checkered_flag: Começando ##
 
 ```bash
-npm run dev
-# or
-yarn dev
+# Clone this project
+$ git clone https://github.com/brunnosena/ignews
+
+# Access
+$ cd ignews
+
+# Install dependencies
+$ yarn install
+
+# Run the project
+$ yarn dev
+
+# The server will initialize in the <http://localhost:3000>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```bash
+# Execute yarn para instalar as dependências
+$ yarn
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+# Na raiz do projeto crie uma copia do arquivo .env.local.example
+# Altere o nome da copia para .env.local
+# Preencha as variáveis ambiente de acordo com as instruções
+$ cp .env.local.example .env.local
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+# Execute stripe listen para ouvir eventos do webhook
+$ stripe listen --forward-to localhost:3000/api/webhooks 
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# Para iniciar a aplicação
+$ yarn dev
 
-## Learn More
+```
 
-To learn more about Next.js, take a look at the following resources:
+## :checkered_flag: Autor ##
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+👋🏽 Feito por Brunno Sena
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[![Linkedin Badge](https://img.shields.io/badge/-BrunnoSena-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/brunnosena/)](https://www.linkedin.com/in/brunnosena/)
+[![Gmail Badge](https://img.shields.io/badge/-brunnow@hotmail.com-red?style=flat-square&link=mailto:brunnowa@hotmail.com)](mailto:brunnow@hotmail.com)
