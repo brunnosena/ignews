@@ -94,7 +94,7 @@ $ yarn dev
 
 ```
 
-## :checkered_flag: Autor ##
+## :smiling_face_with_smiling_eyes: Autor ##
 
 👋🏽 Feito por Brunno Sena
 
