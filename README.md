@@ -94,7 +94,7 @@ $ yarn dev
 
 ```
 
-## :smiling_face_with_smiling_eyes: Autor ##
+## :blush: Autor ##
 
 👋🏽 Feito por Brunno Sena
 
